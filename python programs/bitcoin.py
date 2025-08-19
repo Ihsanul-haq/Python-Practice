@@ -12,7 +12,7 @@ def main():
         sys.exit("Command-line argument is not a number")
 
     try:
-        response = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=64d22abca1a1a42444e5c4e0c2008b65a86a463ff960b0e231f6daad5b740c4b")
+        response = requests.get("https://rest.coincap.io/v3/assets/bitcoin?apiKey=your_key")
         response.raise_for_status()
         data = response.json()
         #print(data)
